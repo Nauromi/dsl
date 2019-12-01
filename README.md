@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+Basic PHP Website
+===========================================
 
-You can use the [editor on GitHub](https://github.com/Nauromi/dsl.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This project, build a simple website using the PHP programming language. The web site, a media library, will let you organize and display your Books, Movies and Music. Could easily use this project to create a website that lets you organize and display any type of item: Branch Locations, Products, Services, Events, even Courses.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Will learn:
+* Organizing and Displaying Inventory
+* Reusing Code
+* Email and Form Data
 
-### Markdown
+I.) Building a Media Library in PHP
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Our media website will have a number of pages, but the pages share a few common elements like the top navigation menu and the footer. We’ll build these shared elements into a set of template files, using basic programming concepts like variables and conditionals to make it all work.
 
-```markdown
-Syntax highlighted code block
+II.) Listing and Sorting Inventory Items
 
-# Header 1
-## Header 2
-### Header 3
+Media library contains quite a bit of information, too much to fit in simple variables. A PHP array will be perfect for the task, and we’ll explore all the ins and outs of working with arrays to store sets of related data. Use the data from the array to populate our category pages that shows a list of all the media in our catalog.
 
-- Bulleted
-- List
+We want to have separate pages for the different categories of media items, but the layout should be the same on each of these pages. We’ll work with PHP functions, blocks of code that can be called from other blocks of code, to make sure that media items are displayed the same across all list pages. PHP comes with a large number of native functions, but it also provides a way to create our own.
 
-1. Numbered
-2. List
+III.) Adding a Basic Form
 
-**Bold** and _Italic_ and `Code` text
+PHP does more than just make a set of HTML files easier to maintain. It also adds advanced functionality to a site that HTML and CSS alone cannot achieve, like sending an email. We’ll create a suggestion form for our website, allowing users to enter a media suggestion into an HTML form and then using PHP to process the form submission.
 
-[Link](url) and ![Image](src)
-```
+IV.) Enhancing a Form
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Nauromi/dsl.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Our suggestion form currently checks that the information submitted by visitors to our site is valid, but we need to improve how validation errors get displayed. We’ll enhance the flow of our code that handles form submissions, displaying error messages within the context of the form and carefully avoiding a common security vulnerability by escaping our output.
